@@ -1,4 +1,4 @@
-//Coding challenge number 1 :
+//Coding challenge number 1  + 2 :
 //Mark and John are trying to compare their BMI Body Mass Index, which is calculated using the formula:
 // BMI = mass / height ** 2 
 // Your tasks:
