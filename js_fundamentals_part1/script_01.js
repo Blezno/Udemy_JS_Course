@@ -39,3 +39,6 @@ if (!isIsland && language === 'english' && population < 50) {
 } else {
     console.log(`${country} does not meet your criteria :(`);
 };
+
+//Lecture : The conditional ternary operator
+console.log(`France's population is ${population >= 33 ? 'above' : 'below'} average.`);
