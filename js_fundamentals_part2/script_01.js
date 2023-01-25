@@ -39,3 +39,25 @@ const percentageOfWorld2 = function calPercentage(population) {
 
 const percentageBrazil = percentageOfWorld2(2143);
 console.log(percentageBrazil);
+
+// Lecture arrow function :
+const percentageOfWorld3 = population => (population / 7900) * 100;
+
+const percPortugal3 = percentageOfWorld3(10);
+const percChina3 = percentageOfWorld3(1441);
+const percUsa3 = percentageOfWorld3(332);
+console.log(percPortugal3, percChina3, percUsa3);
+
+// Lecture : functions calling other functions 
+
+function describePopulation(country, population) {
+    const percentagePopulation = percentageOfWorld1(population);
+    return `${country} has ${population} million people, which is about ${percentagePopulation} % of the World`;
+}
+
+const popChina = describePopulation('China', 1441);
+const popUsa = describePopulation('USA', 332);
+const popBrazil = describePopulation('Brazil', 2143);
+console.log(popChina);
+console.log(popUsa);
+console.log(popBrazil);
