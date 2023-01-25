@@ -61,3 +61,31 @@ const popBrazil = describePopulation('Brazil', 2143);
 console.log(popChina);
 console.log(popUsa);
 console.log(popBrazil);
+
+// Lecture intro to arrays :
+
+const populations = [1441, 332, 2143];
+console.log(populations === 4);
+
+const percentages = [percentageChina, percUsa3, percentageBrazil];
+console.log(percentages);
+
+// Lecture basic array operations methods :
+
+const neighbours = ['Belgium', 'Italia', 'Spain', 'Germany', 'England'];
+console.log(neighbours);
+
+neighbours.push('Utopia'); //to add an element in the array
+console.log(neighbours);
+
+neighbours.pop();
+console.log(neighbours); //to remove the last element of the array
+
+if (neighbours.includes('Sweden')) {//includes is equivalent to index but instead of the index number it returns true or false. ES6 method.
+    console.log('Probably not a nothern country :D');
+}
+
+console.log(neighbours.indexOf('Germany')); //to find the index of an element in an array
+neighbours[neighbours.indexOf('Germany')] = 'Republic of Germany';
+console.log(neighbours);
+
